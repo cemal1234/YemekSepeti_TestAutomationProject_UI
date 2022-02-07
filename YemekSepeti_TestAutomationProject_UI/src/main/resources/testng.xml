@@ -1,0 +1,29 @@
+<!--<suite name="YemekSepeti Test Automation Suite" parallel="tests" thread-count="2">-->
+<suite name="YemekSepeti Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.crm.qa.ExtendReportListener.ExtendReporterNG" />
+    </listeners>
+
+    <test name="YemekSepeti Test Automation Login Pages">
+        <classes>
+            <class name="com.crm.qa.testcases.LoginPagesTests.CitySelectionPageTest"/>
+            <class name="com.crm.qa.testcases.LoginPagesTests.ImageUploadControlPageTest"/>
+            <class name="com.crm.qa.testcases.LoginPagesTests.LoginPageTest"/>
+            <class name="com.crm.qa.testcases.LoginPagesTests.IncorrectInputTypesPageTest"/>
+            <class name="com.crm.qa.testcases.LoginPagesTests.WrongAndSuccessfulLoginPageTest"/>
+            <class name="com.crm.qa.testcases.LoginPagesTests.WrongPasswordLoginPageTest"/>
+            <class name="com.crm.qa.testcases.LoginPagesTests.IForgotMyPasswordPageTest"/>
+            <class name="com.crm.qa.testcases.LoginPagesTests.WithFacebookLoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="YemekSepeti Test Automation Favorite Restaurant Pages">
+        <classes>
+            <class name="com.crm.qa.testcases.FavoriteRestaurantPagesTests.AddAndRemoweToFavoritePageTest"/>
+            <class name="com.crm.qa.testcases.FavoriteRestaurantPagesTests.CheckAndDeleteFavoritePageTest"/>
+            <class name="com.crm.qa.testcases.FavoriteRestaurantPagesTests.AddToFavoriteWithSearchPageTest"/>
+        </classes>
+    </test>
+
+</suite>
